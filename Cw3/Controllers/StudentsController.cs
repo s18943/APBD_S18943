@@ -46,18 +46,26 @@ namespace Cw3.Controllers
             
             //return "Nie znaleziono studentow";
         }
+
+        [HttpGet]
+        public string GetStudent(string orderBy)
+        {
+            return $"Kowalsky, Riko, Szkiper sortowanie={orderBy}";
+        }
+
         [HttpGet("{id}")]
-        public IActionResult GetStudent(string id)
+        public IActionResult GetStudent(int id)
         {
             //using (var client = new SqlConnection("Data Source = db - mssql; Initial Catalog = s18943; Integrated Security = True"))
             //using (var com = new SqlCommand())
             //{
+            string Ska = "s" + id;
                 com.Connection = client;
                 com.CommandText = "Select * FROM Student s " +
                                   "JOIN Enrollment e ON e.IdEnrollment=s.IdEnrollment " +
                                   "JOIN Studies t ON t.IdStudy=e.IdStudy " + 
                                   " WHERE s.IndexNumber=@id";
-                com.Parameters.AddWithValue("id", id);
+                com.Parameters.AddWithValue("id", Ska);
 
                 client.Open();
                 var dr = com.ExecuteReader();
@@ -72,10 +80,8 @@ namespace Cw3.Controllers
                 en.StartDate = dr["StartDate"].ToString().Remove(10);
                 result += id + " " + en.Semestr + " " + dr["Name"].ToString() + " " + en.StartDate + "\n";
             }
-            return Ok(result);
-            //client.Dispose();
-            //client.Close();
-            //}
+            if (result != "")
+                return Ok(result);
             return NotFound("Nie znaleziono studenta");
         }
         //[HttpGet("{orderBy}")]
@@ -89,9 +95,25 @@ namespace Cw3.Controllers
             student.IndexNumber = $"s{new Random().Next(1, 20000)}";
             return Ok(student);
         }
-        
+
         //Data Source = db - mssql; Initial Catalog = s18943; Integrated Security = True
-        //[HttpPut]
-        //[HttpDelete]
+        [HttpPut("{id}")]
+        public IActionResult updateStudent(int id)
+        {
+            if (id == 18943)
+            {
+                return Ok("(Put)Sukces");
+            }
+            return NotFound("Nie znaleziono studenta");
+        }
+        [HttpDelete("{id}")]
+        public IActionResult deleteStudent(int id)
+        {
+            if (id == 18943)
+            {
+                return Ok("(Delete)Sukces");
+            }
+            return NotFound("Nie znaleziono studenta");
+        }
     }
 }
