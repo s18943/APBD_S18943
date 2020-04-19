@@ -8,17 +8,17 @@ namespace Cw3.DTOs.Requests
 {
     public class EnrollStudentRequest
     {
-        //[RegularExpression("^s[0-9]+$")]
+        [RegularExpression("^s[0-9]+$")]
         public string IndexNumber { get; set; }
 
-        [Required(ErrorMessage = "Musisz podacz imie")
+        [Required(ErrorMessage = "Musisz podacz imie")]
         [MaxLength(10)]
         public string FirstName { get; set; }
         [Required]
         [MaxLength(255)]
         public string LastName { get; set; }
-        public DateTime BirthDate { get; internal set; }
+        public DateTime BirthDate { get;  set; }
         [Required]
-        public string Studyes { get; internal set; }
+        public string Studies { get;  set; }
     }
 }

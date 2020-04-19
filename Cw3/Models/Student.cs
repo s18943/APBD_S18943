@@ -8,16 +8,16 @@ namespace Cw3.Models
     public class Student
     {
         public string IndexNumber { get; set; }
-        public string Imie { get; set; }
-        public string Nazwisko { get; set; }
-        public string BirthDate { get; internal set; }
-        public string IdEnrollment { get; internal set; }
-        public string Study { get; internal set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime BirthDate { get; internal set; }
+        public int IdEnrollment { get; internal set; }
+        public string Studies { get; internal set; }
         public string Semester { get; internal set; }
 
         public override string ToString()
         {
-            return IndexNumber + " " + Imie + " " + Nazwisko + " " + BirthDate + "\n";
+            return IndexNumber + " " + FirstName + " " + LastName + " " + BirthDate + "\n";
         }
     }
 }

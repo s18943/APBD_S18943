@@ -13,13 +13,15 @@ namespace Cw3.Controllers
     [ApiController]
     public class StudentsController : ControllerBase
     {
-        SqlConnection client = new SqlConnection("Data Source=db-mssql; Initial Catalog=s18943; Integrated Security=True");
-        SqlCommand com = new SqlCommand();
+       // SqlConnection client = new SqlConnection("Data Source=db-mssql; Initial Catalog=s18943; Integrated Security=True");
+       // SqlCommand com = new SqlCommand();
             
         [HttpGet]
         public string GetStudent()
         {
-           
+            using (var client = new SqlConnection("Data Source=db-mssql; Initial Catalog=s18943; Integrated Security=True"))
+            using (var com = new SqlCommand())
+            {
                 com.Connection = client;
                 com.CommandText = "Select * FROM Student s " +
                                   "JOIN Enrollment e ON e.IdEnrollment=s.IdEnrollment " +
@@ -33,37 +35,37 @@ namespace Cw3.Controllers
                 {
                     var st = new Student();
                     st.IndexNumber = dr["IndexNumber"].ToString();
-                    st.Imie = dr["FirstName"].ToString(); 
-                    st.Nazwisko = dr["LastName"].ToString();
-                    st.BirthDate = dr["BirthDate"].ToString().Remove(10);
-                    st.IdEnrollment = dr["IdEnrollment"].ToString();
-                    st.Study = dr["Name"].ToString();
+                    st.FirstName = dr["FirstName"].ToString();
+                    st.LastName = dr["LastName"].ToString();
+                    st.BirthDate = dr.GetDateTime(3);
+                    st.IdEnrollment = (int)dr["IdEnrollment"];
+                    st.Studies = dr["Name"].ToString();
                     st.Semester = dr["Semester"].ToString();
                     students.Add(st);
-                    result += st.Imie + " " + st.Nazwisko + " " + st.BirthDate + " " + st.Study + " " + st.Semester + "\n";
+                    result += st.FirstName + " " + st.LastName + " " + st.BirthDate + " " + st.Studies + " " + st.Semester + "\n";
                 }
                 return result;
-            
+            }
             //return "Nie znaleziono studentow";
         }
 
-        [HttpGet]
-        public string GetStudent(string orderBy)
-        {
-            return $"Kowalsky, Riko, Szkiper sortowanie={orderBy}";
-        }
+        //[HttpGet]
+        //public string GetStudent(string orderBy)
+        //{
+        //    return $"Kowalsky, Riko, Szkiper sortowanie={orderBy}";
+        //}
 
         [HttpGet("{id}")]
         public IActionResult GetStudent(int id)
         {
-            //using (var client = new SqlConnection("Data Source = db - mssql; Initial Catalog = s18943; Integrated Security = True"))
-            //using (var com = new SqlCommand())
-            //{
-            string Ska = "s" + id;
+            using (var client = new SqlConnection("Data Source=db-mssql; Initial Catalog=s18943; Integrated Security=True"))
+            using (var com = new SqlCommand())
+            {
+                string Ska = "s" + id;
                 com.Connection = client;
                 com.CommandText = "Select * FROM Student s " +
                                   "JOIN Enrollment e ON e.IdEnrollment=s.IdEnrollment " +
-                                  "JOIN Studies t ON t.IdStudy=e.IdStudy " + 
+                                  "JOIN Studies t ON t.IdStudy=e.IdStudy " +
                                   " WHERE s.IndexNumber=@id";
                 com.Parameters.AddWithValue("id", Ska);
 
@@ -71,18 +73,19 @@ namespace Cw3.Controllers
                 var dr = com.ExecuteReader();
                 List<Enrollment> enroliments = new List<Enrollment>();
                 string result = "";
-            while (dr.Read())
-            {
-                var en = new Enrollment();
-                en.IdEnrollment = dr["IdEnrollment"].ToString();
-                en.Semestr = dr["Semester"].ToString();
-                en.IdStudy = dr["IdStudy"].ToString();
-                en.StartDate = dr["StartDate"].ToString().Remove(10);
-                result += id + " " + en.Semestr + " " + dr["Name"].ToString() + " " + en.StartDate + "\n";
+                while (dr.Read())
+                {
+                    var en = new Enrollment();
+                    en.IdEnrollment = (int)dr["IdEnrollment"];
+                    en.Semester = (int)dr["Semester"];
+                    en.IdStudy = (int)dr["IdStudy"];
+                    en.StartDate = (DateTime)dr["StartDate"];
+                    result += id + " " + en.Semester + " " + dr["Name"].ToString() + " " + en.StartDate + "\n";
+                }
+                if (result != "")
+                    return Ok(result);
+                return NotFound("Nie znaleziono studenta");
             }
-            if (result != "")
-                return Ok(result);
-            return NotFound("Nie znaleziono studenta");
         }
         //[HttpGet("{orderBy}")]
         //public string GetStudent(string orderBy)

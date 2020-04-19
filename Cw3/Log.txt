@@ -1,0 +1,14 @@
+GET
+/api/students
+
+
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
