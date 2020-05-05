@@ -7,6 +7,8 @@ namespace Cw3.Models
 {
     public class Student
     {
+        internal Guid refreshToken;
+
         public string IndexNumber { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -14,6 +16,7 @@ namespace Cw3.Models
         public int IdEnrollment { get; internal set; }
         public string Studies { get; internal set; }
         public string Semester { get; internal set; }
+        public string Password { get; set; }
 
         public override string ToString()
         {

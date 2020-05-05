@@ -12,3 +12,688 @@ Route: /api/students
 Body: 
 Query: 
 ____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /favicon.ico
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/swagger/v1/swagger.json
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/swagger/v1/swagger.json
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /swagger/v1/
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /swagger/v1
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /swagger/v1/swagger
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /swagger/v1
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /favicon.ico
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /favicon.ico
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /favicon.ico
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /favicon.ico
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/adm
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/id
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/adm
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/124
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/id
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/id=20007
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/id=18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/id=18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/id=18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/id=18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/id=18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/id=18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/
+Body: 
+Query: ?id=18023
+____________________________
+HTTP: GET
+Route: /api/students/id
+Body: 
+Query: ?id=18023
+____________________________
+HTTP: GET
+Route: /api/students/id/
+Body: 
+Query: ?id=18023
+____________________________
+HTTP: GET
+Route: /api/id/
+Body: 
+Query: ?id=18023
+____________________________
+HTTP: GET
+Route: /api/students/id/
+Body: 
+Query: ?id=18023
+____________________________
+HTTP: GET
+Route: /api/students/
+Body: 
+Query: ?id=18023
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Studies":"informatyka",
+"Semester": 1
+}
+
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Studies":"informatyka",
+"Semester": 1
+}
+
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students/18023
+Body: 
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"jan123",
+"Haslo":"asd123"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"jan123",
+"Haslo":"asd123"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"jan123",
+"Haslo":"asd123"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"jan123",
+"password":"asd123"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"jan123",
+"password":"asd123"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"password":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"password":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"password":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"password":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
+HTTP: GET
+Route: /api/students
+Body: 
+Query: 
+____________________________
+HTTP: POST
+Route: /api/students
+Body: {
+"Login":"adfb",
+"Haslo":"sfga"
+}
+
+Query: 
+____________________________
