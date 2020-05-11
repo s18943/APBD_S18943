@@ -38,9 +38,9 @@ namespace Cw3.Controllers
         public IActionResult PromoteStudents(PromoteStudentRequest request)
         {
             PromoteStudentResponse result = _service.PromoteStudents(request);
-            if (result!=null)
+            if (result != null)
                 return Ok(result);
-            return BadRequest(404); 
+            return BadRequest(404);
 
         }
     }

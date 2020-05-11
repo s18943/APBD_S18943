@@ -34,18 +34,18 @@ namespace Cw3.Middlewares
                 }
                 //zapisat w file
                 //logowanie do pliku using
-                using (StreamWriter file = new StreamWriter(Directory.GetCurrentDirectory()+"/Log.txt", true))
+                using (StreamWriter file = new StreamWriter(Directory.GetCurrentDirectory() + "/Log.txt", true))
                 {
-                    file.WriteLine("HTTP: "+metoda);
-                    file.WriteLine("Route: "+sciezka);
-                    file.WriteLine("Body: "+bodyStr);
-                    file.WriteLine("Query: "+querystring);
+                    file.WriteLine("HTTP: " + metoda);
+                    file.WriteLine("Route: " + sciezka);
+                    file.WriteLine("Body: " + bodyStr);
+                    file.WriteLine("Query: " + querystring);
                     file.WriteLine("____________________________");
                 }
 
             }
-            if(_next != null)
-            await _next(httpContext);
+            if (_next != null)
+                await _next(httpContext);
         }
     }
 }

@@ -45,7 +45,7 @@ namespace Cw3.Controllers
                     if (dr.Read())
                     {
                         var passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Haslo, Configuration["Salt"]);
-                       
+
                         if (!passwordHash.Equals(dr["Haslo"].ToString()))
                             return NotFound("wrong password");
 
@@ -186,14 +186,14 @@ namespace Cw3.Controllers
             }); ;
         }
 
-    
-    //[HttpGet]
-    //public string GetStudent(string orderBy)
-    //{
-    //    return $"Kowalsky, Riko, Szkiper sortowanie={orderBy}";
-    //}
 
-    [HttpGet("{id}")]
+        //[HttpGet]
+        //public string GetStudent(string orderBy)
+        //{
+        //    return $"Kowalsky, Riko, Szkiper sortowanie={orderBy}";
+        //}
+
+        [HttpGet("{id}")]
         [Authorize(Roles = "admin")]
         public IActionResult GetStudent(int id)
         {

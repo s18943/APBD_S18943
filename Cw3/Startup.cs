@@ -63,7 +63,7 @@ namespace Cw3
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IStudentDbService service)
         {
-            if (env.IsDevelopment()) 
+            if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -71,7 +71,7 @@ namespace Cw3
 
             app.UseAuthentication();
             app.UseAuthorization();
-            
+
             app.UseMiddleware<ExceptionMiddleware>();
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             //app.UseSwagger();

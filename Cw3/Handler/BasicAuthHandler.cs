@@ -35,8 +35,8 @@ namespace Cw3.Handlers
             var authHeader = AuthenticationHeaderValue.Parse(Request.Headers["Authorization"]);
             var credentialsBytes = Convert.FromBase64String(authHeader.Parameter);
             var credentials = Encoding.UTF8.GetString(credentialsBytes).Split(":");
-        
-            if(credentials.Length!=2)
+
+            if (credentials.Length != 2)
                 return AuthenticateResult.Fail("Incorrect authorization header value");
 
             //TODO check credentials in DB

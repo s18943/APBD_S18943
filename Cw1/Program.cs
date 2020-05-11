@@ -15,7 +15,7 @@ namespace Cw1
 
             //Console.WriteLine(content);
 
-            string resultes = string.Join(",",ExtractEmails(content));
+            string resultes = string.Join(",", ExtractEmails(content));
             Console.WriteLine(resultes);
         }
 
