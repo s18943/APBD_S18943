@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cw3", "Cw3\Cw3.csproj", "{3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cw9", "LinqConsoleApp\LinqConsoleApp\Cw9.csproj", "{DFDDE6A4-5C6A-4E69-AD1B-BE9A52F509DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cw10", "Cw10\Cw10.csproj", "{65F06AB2-093B-416A-9C55-49CDA32EBF9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DFDDE6A4-5C6A-4E69-AD1B-BE9A52F509DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFDDE6A4-5C6A-4E69-AD1B-BE9A52F509DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFDDE6A4-5C6A-4E69-AD1B-BE9A52F509DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F06AB2-093B-416A-9C55-49CDA32EBF9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F06AB2-093B-416A-9C55-49CDA32EBF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F06AB2-093B-416A-9C55-49CDA32EBF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F06AB2-093B-416A-9C55-49CDA32EBF9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
