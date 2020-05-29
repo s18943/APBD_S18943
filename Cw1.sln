@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cw9", "LinqConsoleApp\LinqC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cw10", "Cw10\Cw10.csproj", "{65F06AB2-093B-416A-9C55-49CDA32EBF9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cw11(Lab10)", "Cw11(Lab10)\Cw11(Lab10).csproj", "{A8CD5410-B0E8-487F-9E7B-E45CCF9E9FED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cw11(Lab10)", "Cw11(Lab10)\Cw11(Lab10).csproj", "{A8CD5410-B0E8-487F-9E7B-E45CCF9E9FED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cw12(Lab11)", "Cw12(Lab11)\Cw12(Lab11).csproj", "{60DD9AD4-1066-496B-AB17-48337B4A11AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{A8CD5410-B0E8-487F-9E7B-E45CCF9E9FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8CD5410-B0E8-487F-9E7B-E45CCF9E9FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8CD5410-B0E8-487F-9E7B-E45CCF9E9FED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60DD9AD4-1066-496B-AB17-48337B4A11AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DD9AD4-1066-496B-AB17-48337B4A11AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60DD9AD4-1066-496B-AB17-48337B4A11AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60DD9AD4-1066-496B-AB17-48337B4A11AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
