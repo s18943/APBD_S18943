@@ -18,10 +18,23 @@ namespace Cw12_Lab11_.Controllers
             _context = context;
         }
 
-        // GET: Patients
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? id)
         {
-            return View(await _context.Patients.ToListAsync());
+            var patients = from p in _context.Patients
+                         select p;
+
+            if (!String.IsNullOrEmpty(id))
+            {
+                patients = patients.Where(s => s.FirstName.Contains(id));
+            }
+
+            return View(await patients.ToListAsync());
+        }
+
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
         }
 
         // GET: Patients/Details/5

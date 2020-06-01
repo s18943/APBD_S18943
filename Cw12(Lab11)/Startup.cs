@@ -53,6 +53,12 @@ namespace Cw12_Lab11_
                     name: "default",
                     pattern: "{controller=Doctors}/{action=Index}/{id?}");
             });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Patients}/{action=Index}/{id?}");
+            });
         }
     }
 }

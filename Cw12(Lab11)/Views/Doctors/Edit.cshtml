@@ -1,4 +1,4 @@
-﻿@model Cw12_Lab11_.Models.Patient
+﻿@model Cw12_Lab11_.Models.Doctor
 
 @{
     ViewData["Title"] = "Edit";
@@ -13,7 +13,7 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdPatient" />
+            <input type="hidden" asp-for="IdDoctor" />
             <div class="form-group">
                 <label asp-for="FirstName" class="control-label"></label>
                 <input asp-for="FirstName" class="form-control" />
@@ -23,11 +23,6 @@
                 <label asp-for="LastName" class="control-label"></label>
                 <input asp-for="LastName" class="form-control" />
                 <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BirdthDate" class="control-label"></label>
-                <input asp-for="BirdthDate" class="form-control" />
-                <span asp-validation-for="BirdthDate" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

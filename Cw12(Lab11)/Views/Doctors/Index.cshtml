@@ -4,6 +4,9 @@
     Layout = "../Shared/_Layout.cshtml";
  }
 <h1>List of Doctors</h1>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
 <table>
     <thead>
         <tr>
@@ -16,9 +19,14 @@
         @foreach (var d in Model)
         {
         <tr>
-            <th>@d.FirstName</th>
-            <th>@d.LastName</th>
-            <th>@d.Email</th>
+            <td>@d.FirstName</td>
+            <td>@d.LastName</td>
+            <td>@d.Email</td>
+            <td>
+                <a class="btn btn-primary" style="background-color:darkgoldenrod" asp-action="Edit" asp-route-id="@d.IdDoctor">Edit</a> |
+                <a class="btn btn-primary" style="background-color:forestgreen" asp-action="GetDetails" asp-route-id="@d.IdDoctor">Details</a> |
+                <a class="btn btn-primary" style="background-color:darkred" asp-action="Delete" asp-route-id="@d.IdDoctor">Delete</a>
+            </td>
         </tr>
         }
         </tbody>
